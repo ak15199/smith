@@ -1,0 +1,42 @@
+@media (prefers-color-scheme: dark) {
+    body {
+        color: #ddd;
+        background: #000;
+    }
+    
+    h1.banner {
+        color: white;
+    }
+    h1:not(.banner) {
+        font-weight: 120;
+    }
+    h2 {
+        font-weight: 150;
+    }
+    h3 {
+        font-weight: 170;
+    }
+    
+    a {
+        color: #ccc;
+    }
+    a:hover {
+        color: #fff;
+    }
+    
+    p.img-wrapper {
+        border: 1px solid #555;
+        background-color: #333;
+    }
+
+    #banner {
+        background-image: url('/images/banner-dark.png');
+        background-image: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 15%,rgba(0,0,0,0) 25%, rgba(0,0,0,0) 100%), url('/images/banner-dark.png');
+
+        border-bottom: 1px solid #555;
+    }
+    
+    .footer > div {
+        border-top: 1px solid #555;
+    }
+}

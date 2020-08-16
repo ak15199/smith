@@ -1,0 +1,64 @@
+@media (min-width: 512px) {  
+    #banner {
+        height: 250px;
+        background-size: 800px auto; 
+    }
+}
+
+@media (min-width: 768px) {
+    #banner {
+        background-size: 120% auto; 
+    }
+    h1.banner {
+        left: 3rem;
+        bottom: 1rem;
+        font-size: 6rem;
+    }
+
+    .twitter-tweet {
+        margin-left: -8rem;
+        clear: left;
+        float: left;
+        padding: 0 0.5rem 0.5rem;
+    }
+
+    p.img-wrapper {
+        margin: 0 0.8rem 0.8rem -8rem;
+        clear: left;
+        width: 20rem;
+    }
+    p.img-wrapper:hover {
+        animation: img-hover-kf 0.5s;
+        animation-timing-function: ease-out;
+        animation-fill-mode: forwards;
+    }
+    @keyframes img-hover-kf {
+        from {width: 20rem;}
+        to {width: 30rem;}
+    }
+    p.img-hovered:not(:hover) {
+        animation: img-nothover-kf 0.5s;
+        animation-timing-function: ease-out;
+        animation-fill-mode: forwards;
+    }
+    @keyframes img-nothover-kf {
+        from {width: 30rem;}
+        to {width: 20rem;}
+    }
+
+    #content-error {
+        margin-top: 8rem;
+    }
+    #content-error h1 {
+        font-size: 24rem;
+        line-height: 20rem;
+    }
+    #content-error h2 {
+        font-size: 3rem;
+        margin-top: -9.6rem;
+        padding-right: 0.5rem;
+    }
+    #content-error p {
+        font-size: 1.8rem;
+    }
+}

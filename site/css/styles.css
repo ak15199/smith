@@ -1,0 +1,149 @@
+body {
+    color: #222;
+    background: #fff;
+    font-family: "Gotham HTF Bold", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    padding-left: 1rem;
+}
+
+h1:not(.banner), h2, h3 {
+    letter-spacing: 0.25rem;
+    text-transform: uppercase;
+    font-weight: 250;
+    padding-bottom: 0.5rem;
+    clear: left;
+}
+h1:not(.banner) {
+    font-size: 2rem;
+}
+h2 {
+    padding-top: 1rem;
+    font-size: 1.5rem;
+}
+h1 + h2 {
+    padding-top:0.5rem;
+}
+h3 {
+    padding-top: .75rem;
+    font-size: 1.3rem;
+}
+h2 + h3 {
+    padding-top:0.2rem;
+}
+
+p {
+    line-height: 1.6rem;
+}
+p.img-wrapper {
+    border: 1px solid #eee;
+    background-color: #f5f5f5;
+    clear: both;
+    display: block;
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+
+    width: 100%;
+    font-size: 80%;
+    line-height: 120%;
+
+    float: left;
+}
+
+p.img-wrapper > img {
+    width: 100%;
+    padding-bottom: 0.5rem;
+}
+
+a {
+    color: #333;
+    font-weight: 200;
+
+}
+a:hover {
+    color: #000;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+blockquote > p {
+    clear: left;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    font-style: oblique;
+    font-weight: 550;
+    line-height: 1.5rem;
+}
+blockquote > p + p {
+    margin-top: -1rem;
+}
+
+li > p {
+    margin-left: 0.25em;
+    margin-bottom: 0.25em;
+}
+
+hr {
+    border-top-color: #888;
+    margin-top: 2rem;
+    margin-bottom: 0.25rem;
+}
+
+#banner {
+    background-image: url('/images/banner-light.png');
+    background-image: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 15%, rgba(255,255,255,0) 25%, rgba(255,255,255,0) 100%), url('/images/banner-light.png');
+    
+    background-position: left -100px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 500px auto;
+    
+    height: 150px;
+    width: 100%;
+    
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #999;
+    
+    position: relative;
+}
+
+h1.banner {
+    position: absolute;
+    bottom: 0.5rem;
+    left: 1rem;
+    font-size: 4rem;
+    font-weight: 800;
+    color: #000;
+}
+
+.footer > div {
+    height: 1rem;
+    margin-top: 8rem;
+}
+
+.footer > div {    
+    border-top: 1px solid #999;
+    padding: 1rem;
+    padding-top: 0.25rem;
+    color: #888
+}
+
+#content-error {
+    margin-top: 8rem;
+}
+#content-error h1 {
+    font-size: 8rem;
+    margin-top: 2rem;
+    font-weight: 900;
+    line-height: 8rem;
+    color: #888;
+    float: right;
+}
+#content-error h2 {
+    font-size: 1rem;
+    font-weight: 600;
+    float: right;
+    margin-top: -5rem;
+}
+#content-error p {
+    font-size: 0.8rem;
+    float: right;
+}
