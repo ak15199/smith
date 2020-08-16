@@ -15,7 +15,7 @@ run `make install` to install the other dependencies
 
 1. Create an AWS account if you don't have one
 
-2. Set up an API key
+2. Create an API key through the AWS UI and install it by running `aws configure`. It will need permissions to access the S3 bucket and CloudFront distributions we are about to create.
 
 3. Create a S3 Bucket for your static content
 
@@ -110,7 +110,12 @@ Source files are processed as jinja2 templates, and corresponding html
 is generated. You can create source files as j2 (Jinja2 templates),
 markdown, or html.
 
-consequently, the html produced is stored in the staging directory.
+The flow is:
+
+1. translate all .md files to .j2
+2. translate all .j2 files to html
+
+The html produced is stored in the staging directory.
 
 Content is promoted to production by copying deltas to an S3 bucket,
 which is then published via a Cloudfront Distribution.
@@ -123,4 +128,11 @@ step manually if you so choose.
 
 This software is designed to run on Macs, you'll need to install the
 required packages manually if you use Linux or Windows.
-# 
+
+## License
+
+Licensed under the Apache License 2.0
+
+## Contributing
+
+We use [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) and encourage code contributions and feedback.
