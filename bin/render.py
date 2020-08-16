@@ -51,7 +51,7 @@ def main(var, infile):
        .j2 or .md file provided
     """
 
-    data = var
+    data = dict([j.split("=") for j in var])
 
     try:
         j2_env = Environment(loader=FileSystemLoader("."),
@@ -80,7 +80,7 @@ def main(var, infile):
             infile).render(data)
 
     else:
-        print("Unsupported format,", path.suffix);
+        print("Unsupported format.", path.suffix);
         exit(1)
 
 

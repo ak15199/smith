@@ -33,7 +33,7 @@ OBJS_MD = $(patsubst $(SRCDIR)/%.md, $(STAGEDIR)/%.html, $(SRCS_MD))
 #
 # References to local programs
 #
-BUILDPY = python3 bin/render.py --maps "SITENAME=${SITENAME}" --maps "GANALYTICSID=${GANALYTICSID}"
+BUILDPY = python3 bin/render.py --var 'SITENAME=${SITENAME}' --var 'GANALYTICSID=${GANALYTICSID}'
 BLOGIMPORTER = sh bin/blogimporter.sh
 BLOGINDEXER = sh bin/blogindexer.sh
 BLOGREDIRECTOR = sh bin/blogredirector.sh
